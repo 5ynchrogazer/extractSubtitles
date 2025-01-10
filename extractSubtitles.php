@@ -90,7 +90,7 @@
 			die ("\033[31mResult_code of ffprobe was: $result_code, exiting.\033[0m\n");
 		
 		//Combine the result from array to string
-		$allSubtitles = implode($allSubtitles, "\r\n");
+		$allSubtitles = implode("\r\n", $allSubtitles);
 		
 		//Convert string JSON to assoc array
 		try {
